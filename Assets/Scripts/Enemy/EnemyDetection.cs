@@ -10,7 +10,7 @@ public class EnemyDetection : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.GetComponent<PlayerCollisions>().Detected(gameObject.transform.position);
+            other.GetComponent<PlayerCollisions>().Detected();
             playerPOS = other.gameObject.transform.position;
 
             GetComponentInParent<EnemyEnd>().Attack(playerPOS);

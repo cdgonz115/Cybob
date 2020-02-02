@@ -35,9 +35,7 @@ public class PlayerCollisions : MonoBehaviour
 
         if(other.gameObject.tag == "Detection")
         {
-            Detected(other.gameObject.GetComponentInParent<Transform>().position);
-
-            other.gameObject.GetComponentInParent<EnemyEnd>().Attack(gameObject.transform.position);
+            Detected();
         }
 
     }
@@ -60,10 +58,9 @@ public class PlayerCollisions : MonoBehaviour
         }
     }
 
-    public void Detected(Vector3 enemyPOS)
+    public void Detected()
     {
-        gameObject.GetComponent<Rigidbody>().useGravity = false;
-
-        gameObject.transform.LookAt(enemyPOS);
+        gameObject.GetComponentInChildren<Movement>().enabled = false;
+        gameObject.GetComponentInChildren<CameraMovement>().enabled = false;
     }
 }
