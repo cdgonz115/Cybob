@@ -13,6 +13,7 @@ public class PlayerCollisions : MonoBehaviour
     private float respawnTime = 1.0f;
     public bool caught = false;
 
+    public Image fadeToBlack;
     public CapsuleCollider myCollider;
     public GameObject myHead;
     public GameObject winText;
@@ -22,9 +23,15 @@ public class PlayerCollisions : MonoBehaviour
     public GameObject gun;
 
     private Color keyColor;
+    private Color fadeAlpha;
+    private float fadeSpeed = 0.5f;
+    public bool gameOver = false;
+
 
     private void Start()
     {
+        fadeAlpha = fadeToBlack.color;
+        fadeAlpha.a = 1.0f;
     }
 
     private void Update()
@@ -33,6 +40,11 @@ public class PlayerCollisions : MonoBehaviour
         {
             counter += Time.deltaTime;
             Respawn();
+        }
+        if(gameOver)
+        {
+            fadeAlpha *= fadeSpeed;
+            fadeToBlack.color = fadeAlpha;
         }
     }
 
@@ -67,6 +79,7 @@ public class PlayerCollisions : MonoBehaviour
             myHead.SetActive(true);
             cross.SetActive(false);
             Destroy(collision.gameObject);
+            gameOver = true;
         }
 
         if (collision.gameObject.tag == "BodyPart")
@@ -118,5 +131,10 @@ public class PlayerCollisions : MonoBehaviour
 
             counter = 0.0f;
         }
+    }
+
+    void EndGame()
+    {
+
     }
 }
