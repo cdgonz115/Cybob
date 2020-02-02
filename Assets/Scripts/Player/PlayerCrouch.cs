@@ -6,7 +6,6 @@ public class PlayerCrouch : MonoBehaviour
 {
 
     public CapsuleCollider standCollider;
-    public CapsuleCollider crouchCollider;
 
     public bool canCrouch = true;
 
@@ -20,6 +19,10 @@ public class PlayerCrouch : MonoBehaviour
     private float camX;
     private float camZ;
 
+    private Vector3 originalCenter;
+    private float originalHeight;
+    private float orginalMovespeed;
+
     private void Start()
     {
         camX = playerCam.transform.localPosition.x;
@@ -31,6 +34,9 @@ public class PlayerCrouch : MonoBehaviour
 
         standCamPOS = new Vector3(camX, standY, camZ);
         crouchCamPOS = new Vector3(camX, crouchY, camZ);
+
+        originalCenter = standCollider.center;
+        originalHeight = standCollider.height;
     }
 
     // Update is called once per frame
@@ -51,22 +57,22 @@ public class PlayerCrouch : MonoBehaviour
 
     void Crouch()
     {
+        standCollider.height = (originalHeight / 2) + 1;
+        standCollider.center = new Vector3(originalCenter.x, originalCenter.y - 1, originalCenter.z);
+
         playerCam.transform.localPosition = crouchCamPOS;
-        crouchCollider.enabled = true;
-        standCollider.enabled = false;
     }
 
     void StandUp()
     {
-        playerCam.transform.localPosition = standCamPOS;
-        standCollider.enabled = true;
-        crouchCollider.enabled = false;
-    }
+        Vector3 point0 = standCollider.transform.position + originalCenter - new Vector3(0.0f, originalHeight, 0.0f);
+        Vector3 point1 = standCollider.transform.position + originalCenter + new Vector3(0.0f, originalHeight, 0.0f);
 
-    bool CheckSpace()
-    {
-        bool canStand = false;
-
-        return canStand;
+        if (Physics.OverlapCapsule(point0, point1, standCollider.radius).Length <= 2)
+        {
+            standCollider.height = originalHeight;
+            standCollider.center = originalCenter;
+            playerCam.transform.localPosition = standCamPOS;
+        }
     }
 }
