@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class Movement : MonoBehaviour
     private float gravity;
     public int jumps = 10;
     public bool canJump = false;
-    public CapsuleCollider playerCollider;
+    //public CapsuleCollider playerCollider;
 
     public Rigidbody rb;
     // Start is called before the first frame update
@@ -34,7 +35,7 @@ public class Movement : MonoBehaviour
     void FixedUpdate()
     {
         movement();
-        if (grounded && !Physics.Raycast(playerCollider.bounds.center, Vector3.down, playerCollider.bounds.extents.y + 0.5f))
+        if (SceneManager.GetActiveScene().name!="Gravity" && grounded && !Physics.Raycast(GetComponentInChildren<CapsuleCollider>().bounds.center, Vector3.down, GetComponentInChildren<CapsuleCollider>().bounds.extents.y + 0.5f))
         {
             gravity = fallCoefficent;
             grounded = false;

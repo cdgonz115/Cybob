@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class PlayerCollisions : MonoBehaviour
 {
     public GameObject[] detectedSpawns = new GameObject[1];
-    int whichSpawn = 0;
+    public int whichSpawn = 0;
 
     private float counter = 0.0f;
     private float respawnTime = 1.0f;
-    private bool caught = false;
+    public bool caught = false;
 
     public RawImage gravityKey;
     public GameObject detectedText;
+    public GameObject gun;
 
     private Color keyColor;
 
@@ -40,7 +41,7 @@ public class PlayerCollisions : MonoBehaviour
             gravityKey.color = keyColor;
         }
 
-        if (other.gameObject.tag == "Detection")
+        if (other.gameObject.tag == "Detection" && !GetComponent<PlayerCrouch>().crouching)
         {
             Detected();
         }
@@ -69,6 +70,13 @@ public class PlayerCollisions : MonoBehaviour
             {
                 Debug.Log("You got brain");
             }
+            if (collision.gameObject.name == "Gun")
+            {
+                gun.SetActive(true);
+                GetComponent<PlayerRaycastShoot>().enabled = true;
+                Debug.Log("You got gun");
+            }
+
             FindObjectOfType<AudioManager>().Play("PartCollection");
 
             Destroy(collision.gameObject);
@@ -87,7 +95,7 @@ public class PlayerCollisions : MonoBehaviour
         caught = true;
     }
 
-    void Respawn()
+    public void Respawn()
     {
         if(counter > respawnTime)
         {

@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Gravity.unity
+    guid: 4b31955ba0208af40ad08191788bc0dc
+  - enabled: 1
+    path: Assets/Scenes/Sneak.unity
+    guid: 5c44c149b79d3e245a6ec1cac696b15a
   m_configObjects: {}
