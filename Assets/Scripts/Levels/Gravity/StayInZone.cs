@@ -33,12 +33,12 @@ public class StayInZone : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         inside = false;
-        if (System.Math.Round(timer, 5) >= 3 && !forward) changeCamera();
+        if (System.Math.Round(timer, 3) >= 3 && !forward) changeCamera();
         timer = 0;
     }
     public void TimerUI()
     {
-        textTime.GetComponent<Text>().text = System.Math.Round(timer,5) + "/3";
+        if(timer<=3)textTime.GetComponent<Text>().text = System.Math.Round(timer,3) + "/3";
     }
     public void changeCamera()
     {
@@ -62,7 +62,7 @@ public class StayInZone : MonoBehaviour
     private void FixedUpdate()
     {
         if(forward)camera1.transform.position=Vector3.MoveTowards(camera1.transform.position, new Vector3(7.68f,-1.73f,-44),3f);
-        if (player.transform.position.z >0)
+        if (player.transform.position.z >5)
         {
             camera1.SetActive(false);
             camera2.SetActive(true);

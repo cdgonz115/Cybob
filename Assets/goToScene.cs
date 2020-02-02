@@ -11,9 +11,10 @@ public class goToScene : MonoBehaviour
     public GameObject zone;
     public GameObject player;
     public GameObject eye;
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             room.GetComponent<RotateRoom>().enabled = false;
             zone.GetComponent<StayInZone>().enabled = false;

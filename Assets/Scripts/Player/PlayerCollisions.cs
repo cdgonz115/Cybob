@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollisions : MonoBehaviour
 {
@@ -13,7 +14,6 @@ public class PlayerCollisions : MonoBehaviour
     public bool caught = false;
 
     public GameObject cross;
-    public RawImage gravityKey;
     public GameObject detectedText;
     public GameObject gun;
 
@@ -21,7 +21,6 @@ public class PlayerCollisions : MonoBehaviour
 
     private void Start()
     {
-        keyColor = gravityKey.color;
     }
 
     private void Update()
@@ -35,12 +34,6 @@ public class PlayerCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "GravityRoom")
-        {
-            keyColor.a = 1f;
-
-            gravityKey.color = keyColor;
-        }
 
         if (other.gameObject.tag == "Detection" && !GetComponent<PlayerCrouch>().crouching)
         {
@@ -53,8 +46,6 @@ public class PlayerCollisions : MonoBehaviour
         if (other.gameObject.tag == "GravityRoom")
         {
             keyColor.a = 0.3f;
-
-            gravityKey.color = keyColor;
         }
     }
 
@@ -81,7 +72,7 @@ public class PlayerCollisions : MonoBehaviour
 
             FindObjectOfType<AudioManager>().Play("PartCollection");
 
-            Destroy(collision.gameObject);
+            if(SceneManager.GetActiveScene().name != "Gravity") Destroy(collision.gameObject);
         }
     }
 
