@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+
     public string verticalInput = "Vertical";
     public string horizontalInput = "Horizontal";
     [SerializeField] private KeyCode jumpKey;

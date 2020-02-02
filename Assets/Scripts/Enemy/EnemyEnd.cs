@@ -20,7 +20,6 @@ public class EnemyEnd : MonoBehaviour
 
     public void Attack(Vector3 player)
     {
-        gameObject.GetComponent<EnemyMovement>().canMove = false;
 
         gameObject.transform.LookAt(player);
 

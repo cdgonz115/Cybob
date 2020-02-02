@@ -72,75 +72,219 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     serializedVersion: 3
-    human: []
+    human:
+    - boneName: Armature
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Chest
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ShoulderConnector.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ShoulderConnector.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand.L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand.R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftUpperLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     skeleton:
-    - name: cybob50(Clone)
+    - name: cybob51(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: body
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.5431879, y: 0.00000011920929, z: -0.26319075}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 100, y: 100, z: 100}
     - name: head
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.5431879, y: 3.3835585, z: -0.26319075}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 100, y: 100, z: 100}
     - name: Circle
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.0037143, y: 0.053898692, z: -0.26856458}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 34.861027, y: 34.861027, z: 34.861027}
     - name: Circle.001
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -2.5242586, y: 1.1690166, z: -0.256503}
       rotation: {x: 0.7147087, y: 0.00730011, z: -0.6993616, w: -0.005626397}
       scale: {x: 37.278873, y: 37.278866, z: 37.27887}
     - name: NurbsCurve
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.5330904, y: 1.3826691, z: -0.016529083}
       rotation: {x: 0.003604543, y: 0.72118974, z: 0.69271725, w: 0.0039114486}
       scale: {x: 100.00001, y: 100, z: 100}
     - name: face shield
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.5431879, y: 0.00000011920929, z: -0.25391364}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 100, y: 100, z: 100}
     - name: EYE SOCKET
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.1387708, y: 1.2957861, z: 0.6651392}
       rotation: {x: 0.1328868, y: 0.1328868, z: 0.6945078, w: 0.69450784}
       scale: {x: -22.362782, y: -22.36278, z: -22.36278}
     - name: Sphere
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.0658679, y: 1.3154534, z: 0.6256667}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 22.952261, y: 22.952261, z: 22.952261}
     - name: Sphere.001
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -2.0076132, y: 1.3154534, z: 0.60232586}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 22.952261, y: 22.952261, z: 22.952261}
     - name: hands
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: 1.5140233, y: 1.1662949, z: -0.27065647}
       rotation: {x: 0.000000015454313, y: 0.70710677, z: -0.000000015454312, w: 0.7071068}
       scale: {x: 23.03037, y: 23.03037, z: 23.03037}
     - name: Circle.002
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -2.1150835, y: -1.6395098, z: -0.26475164}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 22.918642, y: 22.918642, z: 22.918642}
     - name: brain
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.5036976, y: 2.4851768, z: -0.30049014}
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
       scale: {x: 67.84141, y: 67.84141, z: 67.84141}
     - name: Armature
-      parentName: cybob50(Clone)
+      parentName: cybob51(Clone)
       position: {x: -1.6003065, y: 0.18998817, z: -0.14363837}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}

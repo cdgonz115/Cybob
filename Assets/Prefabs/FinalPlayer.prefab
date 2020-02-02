@@ -204,7 +204,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0015c42f899d6344a354e4e32ae429f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectedSpawns:
+  - {fileID: 0}
   gravityKey: {fileID: 0}
+  detectedText: {fileID: 0}
 --- !u!136 &421094459396755611
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -582,7 +585,8 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f8e0f2cfd2de8a54496c456806e7ff97, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6057140222963153312, guid: 5349cab0a6bb2a446b7403dd1b0b8499, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5349cab0a6bb2a446b7403dd1b0b8499, type: 3}
 --- !u!1 &8573140892369305488 stripped
 GameObject:
