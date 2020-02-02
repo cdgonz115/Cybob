@@ -29,6 +29,8 @@ public class PlayerRaycastShoot : MonoBehaviour
         {
             Shoot();
 
+            gameObject.GetComponentInChildren<AudioManager>().Play("Gunshot");
+
             myGun.transform.Rotate(new Vector3(gunX + gunRecoil, 0, 0));
         }
 

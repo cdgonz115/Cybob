@@ -188,6 +188,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1289651286, guid: cdea9513081a4be4d934091c490fe72b, type: 3}
+      propertyPath: detectedSpawns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1305072577}
+    - target: {fileID: 1289651286, guid: cdea9513081a4be4d934091c490fe72b, type: 3}
       propertyPath: gravityKey
       value: 
       objectReference: {fileID: 1543779932}
@@ -195,15 +199,6 @@ PrefabInstance:
       propertyPath: detectedText
       value: 
       objectReference: {fileID: 1273265187}
-    - target: {fileID: 1289651286, guid: cdea9513081a4be4d934091c490fe72b, type: 3}
-      propertyPath: detectedSpawns.Array.data[0]
-      value: 
-      objectReference: {fileID: 1305072577}
-    - target: {fileID: 1213866791288250782, guid: cdea9513081a4be4d934091c490fe72b,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f223dbe2777209a4b89ae4a558b0f583, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdea9513081a4be4d934091c490fe72b, type: 3}
 --- !u!1 &240704617

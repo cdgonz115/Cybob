@@ -69,6 +69,7 @@ public class PlayerCollisions : MonoBehaviour
             {
                 Debug.Log("You got brain");
             }
+            FindObjectOfType<AudioManager>().Play("PartCollection");
 
             Destroy(collision.gameObject);
         }
@@ -76,6 +77,7 @@ public class PlayerCollisions : MonoBehaviour
 
     public void Detected()
     {
+        FindObjectOfType<AudioManager>().Play("DetectedSound");
         detectedText.SetActive(true);
 
         gameObject.GetComponent<Movement>().rb.velocity = new Vector3(0, 0, 0);
