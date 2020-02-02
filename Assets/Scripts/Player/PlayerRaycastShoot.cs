@@ -7,7 +7,7 @@ public class PlayerRaycastShoot : MonoBehaviour
     private Camera fpsCam => GetComponentInChildren<Camera>();
 
     public float damage = 100.0f;
-    public float range = 10.0f;
+    public float range = 100.0f;
 
     Quaternion gunRot;
     private float gunX;
