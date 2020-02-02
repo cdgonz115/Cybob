@@ -11,13 +11,15 @@ public class EnemyStatic : MonoBehaviour
 
     public float goal = 180f;
     private Quaternion myAngle;
+    private float initial;
 
     bool otherWay = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        myAngle = Quaternion.Euler(0f, goal, 0f);
+        initial = transform.rotation.eulerAngles.y;
+        myAngle = Quaternion.Euler(0f, initial + goal, 0f);
     }
 
     // Update is called once per frame
@@ -36,12 +38,12 @@ public class EnemyStatic : MonoBehaviour
             {
                 if (!otherWay)
                 {
-                    myAngle = Quaternion.Euler(0f, 0f, 0f);
+                    myAngle = Quaternion.Euler(0f,initial, 0f);
                     otherWay = true;
                 }
                 else
                 {
-                    myAngle = Quaternion.Euler(0f, goal, 0f);
+                    myAngle = Quaternion.Euler(0f,initial+ goal, 0f);
                     otherWay = false;
                 }
                 counter = 0f;

@@ -8,6 +8,7 @@ public class PlayerCrouch : MonoBehaviour
     public CapsuleCollider standCollider => GetComponentInChildren<CapsuleCollider>();
 
     public bool canCrouch = true;
+    public bool crouching = false;
 
     private Vector3 standCamPOS;
     private Vector3 crouchCamPOS;
@@ -57,6 +58,7 @@ public class PlayerCrouch : MonoBehaviour
 
     void Crouch()
     {
+        crouching = true;
         standCollider.height = (originalHeight / 2) + 1;
         standCollider.center = new Vector3(originalCenter.x, originalCenter.y - 1, originalCenter.z);
 
@@ -65,6 +67,7 @@ public class PlayerCrouch : MonoBehaviour
 
     void StandUp()
     {
+        crouching = false;
         Vector3 point0 = standCollider.transform.position + originalCenter - new Vector3(0.0f, originalHeight, 0.0f);
         Vector3 point1 = standCollider.transform.position + originalCenter + new Vector3(0.0f, originalHeight, 0.0f);
 

@@ -9,6 +9,7 @@ public class UnlockCrouch : MonoBehaviour
     {
 
         other.GetComponentInParent<PlayerCrouch>().canCrouch = true;
+        other.GetComponentInParent<PlayerCollisions>().whichSpawn = 1;
         Destroy(transform.gameObject);
     }
 }
