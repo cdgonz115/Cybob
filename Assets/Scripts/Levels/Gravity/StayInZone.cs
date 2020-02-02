@@ -23,7 +23,7 @@ public class StayInZone : MonoBehaviour
     public void Start()
     {
        crosshair.SetActive(false);
-       textTime.GetComponent<Text>().text = timer + "/4";
+       textTime.GetComponent<Text>().text = timer + "/3";
     }
     private void OnTriggerStay(Collider other)
     {
@@ -33,12 +33,12 @@ public class StayInZone : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         inside = false;
-        if (System.Math.Round(timer, 5) >= 4 && !forward) changeCamera();
+        if (System.Math.Round(timer, 5) >= 3 && !forward) changeCamera();
         timer = 0;
     }
     public void TimerUI()
     {
-        textTime.GetComponent<Text>().text = System.Math.Round(timer,5) + "/4";
+        textTime.GetComponent<Text>().text = System.Math.Round(timer,5) + "/3";
     }
     public void changeCamera()
     {
