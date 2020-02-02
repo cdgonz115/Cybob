@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sneak.unity
     guid: 5c44c149b79d3e245a6ec1cac696b15a
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 7e61c5f74054f2649a89ae11fb12296b
   m_configObjects: {}

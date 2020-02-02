@@ -13,7 +13,6 @@ public class PlayerCollisions : MonoBehaviour
     private float respawnTime = 1.0f;
     public bool caught = false;
 
-    public Image fadeToBlack;
     public CapsuleCollider myCollider;
     public GameObject myHead;
     public GameObject winText;
@@ -30,7 +29,7 @@ public class PlayerCollisions : MonoBehaviour
 
     private void Start()
     {
-        fadeAlpha = fadeToBlack.color;
+        //fadeAlpha = fadeToBlack.color;
         fadeAlpha.a = 1.0f;
     }
 
@@ -44,7 +43,7 @@ public class PlayerCollisions : MonoBehaviour
         if(gameOver)
         {
             fadeAlpha *= fadeSpeed;
-            fadeToBlack.color = fadeAlpha;
+
         }
     }
 
@@ -74,7 +73,8 @@ public class PlayerCollisions : MonoBehaviour
             gameObject.GetComponent<Movement>().enabled = false;
             gameObject.GetComponentInChildren<CameraMovement>().enabled = false;
 
-            winText.SetActive(true);
+            SceneManager.LoadScene("End");
+            //winText.SetActive(true);
             myBrain.SetActive(true);
             myHead.SetActive(true);
             cross.SetActive(false);
