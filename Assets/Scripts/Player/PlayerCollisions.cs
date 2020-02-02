@@ -12,6 +12,10 @@ public class PlayerCollisions : MonoBehaviour
     private float respawnTime = 1.0f;
     public bool caught = false;
 
+    public CapsuleCollider myCollider;
+    public GameObject myHead;
+    public GameObject winText;
+    public GameObject myBrain;
     public GameObject cross;
     public RawImage gravityKey;
     public GameObject detectedText;
@@ -60,17 +64,28 @@ public class PlayerCollisions : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "BodyPart")
+        if (collision.gameObject.tag == "Head")
+        {
+            myCollider.enabled = false;
+            gameObject.GetComponent<Rigidbody>().useGravity = false;
+            gameObject.GetComponent<Movement>().enabled = false;
+            gameObject.GetComponentInChildren<CameraMovement>().enabled = false;
+
+            winText.SetActive(true);
+            myBrain.SetActive(true);
+            myHead.SetActive(true);
+            cross.SetActive(false);
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "BodyPart")
         {
             if(collision.gameObject.name.Equals("Eyes(Clone)"))
             {
                 Debug.Log("You got eyes");
             }
 
-            if(collision.gameObject.name == "Brain")
-            {
-                Debug.Log("You got brain");
-            }
+            
             if (collision.gameObject.name == "Gun")
             {
                 gun.SetActive(true);

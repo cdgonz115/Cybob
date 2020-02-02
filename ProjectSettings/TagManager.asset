@@ -11,6 +11,7 @@ TagManager:
   - Eyes
   - BodyPart
   - Detection
+  - Head
   layers:
   - Default
   - TransparentFX
