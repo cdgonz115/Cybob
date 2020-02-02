@@ -18,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
 
     protected void Die()
     {
+        FindObjectOfType<AudioManager>().Play("MonsterDeath");
         Destroy(this.gameObject);
     }
 }

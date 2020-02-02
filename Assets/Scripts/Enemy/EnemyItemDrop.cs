@@ -16,6 +16,7 @@ public class EnemyItemDrop : MonoBehaviour
         {
             Vector3 spawnSpot = this.gameObject.transform.position;
 
+            FindObjectOfType<AudioManager>().Play("MonsterDeath");
             Destroy(this.gameObject);
 
             Instantiate(itemToDrop, spawnSpot, Quaternion.identity);
