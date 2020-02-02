@@ -34,10 +34,7 @@ public class EnemyMovement : MonoBehaviour
     {
         currentPOS = gameObject.transform.position;
 
-        if(canMove)
-        {
-            MoveToPoint();
-        }
+        MoveToPoint();
     }
 
     void MoveToPoint()
