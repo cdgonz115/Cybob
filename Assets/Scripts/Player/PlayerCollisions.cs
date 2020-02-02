@@ -12,6 +12,7 @@ public class PlayerCollisions : MonoBehaviour
     private float respawnTime = 1.0f;
     public bool caught = false;
 
+    public GameObject cross;
     public RawImage gravityKey;
     public GameObject detectedText;
     public GameObject gun;
@@ -73,6 +74,7 @@ public class PlayerCollisions : MonoBehaviour
             if (collision.gameObject.name == "Gun")
             {
                 gun.SetActive(true);
+                cross.SetActive(true);
                 GetComponent<PlayerRaycastShoot>().enabled = true;
                 Debug.Log("You got gun");
             }
