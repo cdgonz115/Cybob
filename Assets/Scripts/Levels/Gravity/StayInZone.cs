@@ -33,7 +33,7 @@ public class StayInZone : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         inside = false;
-        if (timer >= 4 && !forward) changeCamera();
+        if (System.Math.Round(timer, 5) >= 4 && !forward) changeCamera();
         timer = 0;
     }
     public void TimerUI()
@@ -43,9 +43,9 @@ public class StayInZone : MonoBehaviour
     public void changeCamera()
     {
         forward = true;
-        //camera1.SetActive(false);
+
         camera1.GetComponent<Camera>().orthographic = false;
-        //camera2.SetActive(true);
+
         light1.GetComponent<Light>().enabled = true;
         light2.GetComponent<Light>().enabled = true;
         light3.GetComponent<Light>().enabled = true;
@@ -53,6 +53,7 @@ public class StayInZone : MonoBehaviour
         light2.GetComponent<MoveLight>().enabled = true;
         light3.GetComponent<MoveLight>().enabled = true;
         GetComponent<MeshRenderer>().enabled = false;
+
         wKey.GetComponent<RawImage>().CrossFadeAlpha(255f, 60, true);
         sKey.GetComponent<RawImage>().CrossFadeAlpha(255f, 60, true);
         textTime.SetActive(false);
@@ -60,7 +61,12 @@ public class StayInZone : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(forward)camera1.transform.position=Vector3.MoveTowards(camera1.transform.position, new Vector3(7.68f,-1.73f,-44),2f);
+        if(forward)camera1.transform.position=Vector3.MoveTowards(camera1.transform.position, new Vector3(7.68f,-1.73f,-44),3f);
+        if (player.transform.position.z >0)
+        {
+            camera1.SetActive(false);
+            camera2.SetActive(true);
+        }
     }
 
 
