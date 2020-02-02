@@ -6,9 +6,8 @@ public class EnemyMovement : MonoBehaviour
 {
     public GameObject[] patrolPoints = new GameObject[2];
 
-    public float moveSpeed = 1.0f;
-    public float turnSpeed = 1.0f;
-    public bool canMove = true;
+    public float moveSpeed = 3.5f;
+    public float turnSpeed = 2.0f;
 
     private int targetPoint;
     private int maxPoints;
