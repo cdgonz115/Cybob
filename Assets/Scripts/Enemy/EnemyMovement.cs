@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
 
     public float moveSpeed = 1.0f;
     public float turnSpeed = 1.0f;
+    public bool canMove = true;
 
     private int targetPoint;
     private int maxPoints;
@@ -33,7 +34,10 @@ public class EnemyMovement : MonoBehaviour
     {
         currentPOS = gameObject.transform.position;
 
-        MoveToPoint();
+        if(canMove)
+        {
+            MoveToPoint();
+        }
     }
 
     void MoveToPoint()

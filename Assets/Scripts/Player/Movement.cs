@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public string verticalInput;
-    public string horizontalInput;
+    public string verticalInput = "Vertical";
+    public string horizontalInput = "Horizontal";
     public float runSpeed;
-    public float movementSpeed;
+    public float movementSpeed = 4;
     public float timer;
     public bool forwardUnlocked;
 

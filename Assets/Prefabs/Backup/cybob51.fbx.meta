@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 5349cab0a6bb2a446b7403dd1b0b8499
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: cybob50(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body
+      parentName: cybob50(Clone)
+      position: {x: -1.5431879, y: 0.00000011920929, z: -0.26319075}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 100, y: 100, z: 100}
+    - name: head
+      parentName: cybob50(Clone)
+      position: {x: -1.5431879, y: 3.3835585, z: -0.26319075}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Circle
+      parentName: cybob50(Clone)
+      position: {x: -1.0037143, y: 0.053898692, z: -0.26856458}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 34.861027, y: 34.861027, z: 34.861027}
+    - name: Circle.001
+      parentName: cybob50(Clone)
+      position: {x: -2.5242586, y: 1.1690166, z: -0.256503}
+      rotation: {x: 0.7147087, y: 0.00730011, z: -0.6993616, w: -0.005626397}
+      scale: {x: 37.278873, y: 37.278866, z: 37.27887}
+    - name: NurbsCurve
+      parentName: cybob50(Clone)
+      position: {x: -1.5330904, y: 1.3826691, z: -0.016529083}
+      rotation: {x: 0.003604543, y: 0.72118974, z: 0.69271725, w: 0.0039114486}
+      scale: {x: 100.00001, y: 100, z: 100}
+    - name: face shield
+      parentName: cybob50(Clone)
+      position: {x: -1.5431879, y: 0.00000011920929, z: -0.25391364}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 100, y: 100, z: 100}
+    - name: EYE SOCKET
+      parentName: cybob50(Clone)
+      position: {x: -1.1387708, y: 1.2957861, z: 0.6651392}
+      rotation: {x: 0.1328868, y: 0.1328868, z: 0.6945078, w: 0.69450784}
+      scale: {x: -22.362782, y: -22.36278, z: -22.36278}
+    - name: Sphere
+      parentName: cybob50(Clone)
+      position: {x: -1.0658679, y: 1.3154534, z: 0.6256667}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 22.952261, y: 22.952261, z: 22.952261}
+    - name: Sphere.001
+      parentName: cybob50(Clone)
+      position: {x: -2.0076132, y: 1.3154534, z: 0.60232586}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 22.952261, y: 22.952261, z: 22.952261}
+    - name: hands
+      parentName: cybob50(Clone)
+      position: {x: 1.5140233, y: 1.1662949, z: -0.27065647}
+      rotation: {x: 0.000000015454313, y: 0.70710677, z: -0.000000015454312, w: 0.7071068}
+      scale: {x: 23.03037, y: 23.03037, z: 23.03037}
+    - name: Circle.002
+      parentName: cybob50(Clone)
+      position: {x: -2.1150835, y: -1.6395098, z: -0.26475164}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 22.918642, y: 22.918642, z: 22.918642}
+    - name: brain
+      parentName: cybob50(Clone)
+      position: {x: -1.5036976, y: 2.4851768, z: -0.30049014}
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      scale: {x: 67.84141, y: 67.84141, z: 67.84141}
+    - name: Armature
+      parentName: cybob50(Clone)
+      position: {x: -1.6003065, y: 0.18998817, z: -0.14363837}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Spine
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Chest
+      parentName: Spine
+      position: {x: -0, y: 0.005, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck
+      parentName: Chest
+      position: {x: -0, y: 0.005, z: 0}
+      rotation: {x: -0.018899493, y: 0.45631206, z: 0.009694682, w: 0.8895663}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Head
+      parentName: Neck
+      position: {x: -1.5685674e-12, y: 0.006173994, z: 0}
+      rotation: {x: -0.009351714, y: 0.08374565, z: 0.0043477835, w: 0.99643385}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: ShoulderConnector.R
+      parentName: Chest
+      position: {x: -0, y: 0.005, z: 0}
+      rotation: {x: -0.43957627, y: -0.3226377, z: -0.5313783, w: 0.64831686}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Shoulder.R
+      parentName: ShoulderConnector.R
+      position: {x: -0, y: 0.009393144, z: 0}
+      rotation: {x: 0.011215864, y: -0.00058764283, z: -0.052320607, w: 0.9985672}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: UpperArm.R
+      parentName: Shoulder.R
+      position: {x: 1.4976536e-11, y: 0.0056962445, z: 1.63418e-10}
+      rotation: {x: 0.0048531354, y: -0.000000050931696, z: -0.022704147, w: 0.99973047}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerArm.R
+      parentName: UpperArm.R
+      position: {x: -1.1458055e-10, y: 0.005696242, z: 8.1141477e-10}
+      rotation: {x: -4.7293724e-10, y: -1.04414255e-11, z: -0.000000011180867, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand.R
+      parentName: LowerArm.R
+      position: {x: -1.3014002e-10, y: 0.005696244, z: -2.919114e-10}
+      rotation: {x: -0.0000000053769327, y: 0.0000000051925664, z: 0.000000033475033,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoulderConnector.L
+      parentName: Chest
+      position: {x: -0, y: 0.005, z: 0}
+      rotation: {x: -0.43957624, y: 0.32263768, z: 0.5313783, w: 0.64831686}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Shoulder.L
+      parentName: ShoulderConnector.L
+      position: {x: -0, y: 0.009393144, z: 0}
+      rotation: {x: 0.011215864, y: 0.00058764283, z: 0.052320607, w: 0.9985672}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: UpperArm.L
+      parentName: Shoulder.L
+      position: {x: -1.4976536e-11, y: 0.0056962445, z: 1.63418e-10}
+      rotation: {x: 0.004853201, y: 0.00000011065276, z: 0.022704452, w: 0.99973047}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerArm.L
+      parentName: UpperArm.L
+      position: {x: 1.1458055e-10, y: 0.005696242, z: 8.1141477e-10}
+      rotation: {x: -4.7293724e-10, y: 1.04414255e-11, z: 0.000000011180867, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand.L
+      parentName: LowerArm.L
+      position: {x: 1.3014002e-10, y: 0.005696244, z: -2.919114e-10}
+      rotation: {x: -0.0000000053769327, y: -0.0000000051925664, z: -0.000000033475033,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg.R
+      parentName: Chest
+      position: {x: -0.0046258783, y: -0.0021701967, z: -0.0008882258}
+      rotation: {x: 0.7070439, y: -0.001629153, z: 0.7071424, w: -0.0059930743}
+      scale: {x: 1.0000799, y: 1, z: 1.0002431}
+    - name: LowerLeg.R
+      parentName: UpperLeg.R
+      position: {x: -3.638888e-11, y: 0.010624828, z: 2.4789187e-10}
+      rotation: {x: 2.6238925e-10, y: -8.65839e-10, z: 0.0000000043747157, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Foot.R
+      parentName: LowerLeg.R
+      position: {x: -5.967195e-11, y: 0.010624828, z: 1.7716957e-10}
+      rotation: {x: 0.36193344, y: 0.1604774, z: -0.07011933, w: 0.9156061}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: LeftUpperLeg
+      parentName: Chest
+      position: {x: 0.0046258783, y: -0.0021701967, z: -0.0008882258}
+      rotation: {x: -0.7070439, y: -0.001629153, z: 0.7071424, w: 0.0059930743}
+      scale: {x: 1.0000799, y: 1, z: 1.0002431}
+    - name: LowerLeg.L
+      parentName: LeftUpperLeg
+      position: {x: 3.638888e-11, y: 0.010624828, z: 2.4789187e-10}
+      rotation: {x: 2.6238925e-10, y: 8.65839e-10, z: -0.0000000043747157, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Foot.L
+      parentName: LowerLeg.L
+      position: {x: 5.967195e-11, y: 0.010624828, z: 1.7716957e-10}
+      rotation: {x: 0.36193344, y: -0.1604774, z: 0.07011933, w: 0.9156061}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

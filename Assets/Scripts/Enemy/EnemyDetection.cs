@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class EnemyDetection : MonoBehaviour
 {
-    public float lookRadius = 10.0f;
+    Vector3 playerPOS;
 
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
+        if (other.gameObject.tag == "Player")
+        {
+            other.GetComponent<PlayerCollisions>().Detected(gameObject.transform.position);
+            playerPOS = other.gameObject.transform.position;
 
-    
-    void Update()
-    {
-        
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, lookRadius);
+            GetComponentInParent<EnemyEnd>().Attack(playerPOS);
+        }
     }
 }

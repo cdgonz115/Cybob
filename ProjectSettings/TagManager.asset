@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - GravityRoom
   - NoStanding
+  - Eyes
+  - BodyPart
+  - Detection
   layers:
   - Default
   - TransparentFX

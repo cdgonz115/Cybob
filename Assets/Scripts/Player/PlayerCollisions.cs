@@ -33,13 +33,37 @@ public class PlayerCollisions : MonoBehaviour
             gravityKey.color = keyColor;
         }
 
+        if(other.gameObject.tag == "Detection")
+        {
+            Detected(other.gameObject.GetComponentInParent<Transform>().position);
+
+            other.gameObject.GetComponentInParent<EnemyEnd>().Attack(gameObject.transform.position);
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Item")
+        if(collision.gameObject.tag == "BodyPart")
         {
+            if(collision.gameObject.name.Equals("Eyes(Clone)"))
+            {
+                Debug.Log("You got eyes");
+            }
+
+            if(collision.gameObject.name == "Brain")
+            {
+                Debug.Log("You got brain");
+            }
+
             Destroy(collision.gameObject);
         }
+    }
+
+    public void Detected(Vector3 enemyPOS)
+    {
+        gameObject.GetComponent<Rigidbody>().useGravity = false;
+
+        gameObject.transform.LookAt(enemyPOS);
     }
 }

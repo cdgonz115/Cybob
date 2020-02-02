@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCrouch : MonoBehaviour
 {
 
-    public CapsuleCollider standCollider;
+    public CapsuleCollider standCollider => GetComponent<CapsuleCollider>();
 
     public bool canCrouch = true;
 
